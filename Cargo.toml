@@ -1,6 +1,6 @@
 [package]
 name = "web-eid"
-version = "0.0.0"
+version = "0.1.0"
 edition = "2024"
 description = "Web eID client for authentication and signing"
 license = "Apache-2.0"
@@ -10,3 +10,10 @@ keywords = ["webeid", "web-eid", "esteid"]
 categories = ["cryptography"]
 
 [dependencies]
+base64 = "0.22"
+esteid-cryptoki = "0.1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+thiserror = "2"
+tokenkey = "0.1.1"

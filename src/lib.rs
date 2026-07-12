@@ -1,5 +1,12 @@
 //! Web eID client library.
-//!
-//! This 0.0.x release is a name-reservation stub and exposes no API yet.
 
-#![forbid(unsafe_code)]
+mod auth;
+mod error;
+mod sign;
+
+pub use auth::{authenticate, AuthToken, TOKEN_FORMAT};
+pub use error::{Result, WebEidError};
+pub use sign::{recommended_hash, sign};
+
+pub use esteid_cryptoki::{modules, EstEidError, IdCard};
+pub use tokenkey::{EcCurve, Hash, KeyAlgorithm, TokenkeyError};
