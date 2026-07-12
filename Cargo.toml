@@ -4,8 +4,8 @@ version = "0.0.0"
 edition = "2024"
 description = "Web eID client for authentication and signing"
 license = "Apache-2.0"
-homepage = "https://github.com/takakv/allkiri"
-repository = "https://github.com/takakv/allkiri"
+homepage = "https://github.com/takakv/web-eid"
+repository = "https://github.com/takakv/web-eid"
 keywords = ["webeid", "web-eid", "esteid"]
 categories = ["cryptography"]
 
